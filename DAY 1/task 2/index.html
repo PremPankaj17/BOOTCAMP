@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box-Sizing </title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .id {
+        width: 100%;
+        margin: 20px auto;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border: 2px solid #4a0df1;
+    }
+    
+    .box {
+        width: 50%;
+        padding: 20px;
+        border: 2px solid #999;
+        background-color: #0df018;
+        margin-bottom: 20px;
+        box-sizing: content-box; 
+    }
+        
+</style>
+</head>
+<body>
+
+<div class="id">
+    <h2>Container</h2>
+    <div class="box">
+        <h3>Box Sizing</h3>
+        <p>This is the box-sizing value which includes its width and height.</p>
+    </div>
+</div>
+
+</body>
+</html>

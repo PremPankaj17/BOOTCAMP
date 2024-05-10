@@ -1,0 +1,59 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.id {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #7707f7;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease; 
+}
+
+.box:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.box:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+.box:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.box:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.box.center {
+    top: 50%;
+    left: 50%;
+    background: #2aec04;
+    animation: rotateCenter 4s linear infinite; 
+}
+
+@keyframes rotateCenter {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
